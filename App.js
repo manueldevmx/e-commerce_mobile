@@ -8,7 +8,7 @@ export default function App() {
   return (
     <PaperProvider>
       <View style={styles.container}>
-       <Test/>
+       <Text>Hola</Text>
       </View>
     </PaperProvider>
   );
