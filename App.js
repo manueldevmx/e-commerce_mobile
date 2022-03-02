@@ -1,24 +1,18 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Provider as PaperProvider } from "react-native-paper";
-import Test from "./src/components/Test";
+import Auth from "./src/components/screens/Auth";
+
 
 
 export default function App() {
   return (
     <PaperProvider>
-      <View style={styles.container}>
-       <Text>Hola</Text>
-      </View>
+     
     </PaperProvider>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
+ 
 });
