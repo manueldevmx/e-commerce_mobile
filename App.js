@@ -8,11 +8,9 @@ import Auth from "./src/components/screens/Auth";
 export default function App() {
   return (
     <PaperProvider>
-     
+      <Auth/>
     </PaperProvider>
   );
 }
 
-const styles = StyleSheet.create({
- 
-});
+
