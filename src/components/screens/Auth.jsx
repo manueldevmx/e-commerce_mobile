@@ -4,13 +4,18 @@ import { View, Text, StyleSheet } from "react-native";
 import LottieView from "lottie-react-native";
 import { TextInput, Button } from "react-native-paper";
 import { layoutStyles } from "../../styles";
+import RegisterForm from "../Auth/RegisterForm";
+
 
 
 // create a component
 const Auth = () => {
   const [text, setText] = useState("");
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
     <View style={styles.container}>
+    {showLogin ? <Text>Form Login</Text> : <Text>Form Register</Text>}
       <LottieView
         source={require("../../../assets/shop.json")}
         autoPlay
